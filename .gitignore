@@ -16,7 +16,6 @@
 
 # Build outputs
 **/build/
-**/dist/
 **/*.build/
 **/out/
 **/__pycache__/

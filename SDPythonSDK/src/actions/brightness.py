@@ -94,6 +94,7 @@ class Brightness(Action):
         if self._set_power(target):
             self._power = target
             self._update_settings(power=target)
+            self._sync_display()
             self.show_ok()
         else:
             self.show_alert()
@@ -280,6 +281,7 @@ class Brightness(Action):
         return True
 
     def _sync_display(self):
+        self.set_state(1 if self._power == "on" else 0)
         if self._device_name:
             display_name = self._device_name
             if " " in display_name:

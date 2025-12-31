@@ -13,7 +13,7 @@ Features:
 - Device picker in the property inspector
 
 Known Issues:
-- The Brightness Knob does not function properly with groups. It should work with individual devices.
+- The Brightness Knob Widget does not function properly with groups. It should work with individual devices.
 
 
 
@@ -34,7 +34,7 @@ SDPythonSDK/venv/bin/python -m pip install -r SDPythonSDK/requirements.txt
 2. Symlink the plugin bundle into Stream Dock:
 ```bash
 ln -s "~/GIT/StreamDock-Plugin-SDK/SDPythonSDK/com.mirabox.streamdock.goveelightcontrol.sdPlugin" \
-      "/Users/christophergeno/Library/Application Support/HotSpot/StreamDock/plugins/"
+      "~/Library/Application Support/HotSpot/StreamDock/plugins/"
 ```
 
 3. Ensure `SDPythonSDK/com.mirabox.streamdock.goveelightcontrol.sdPlugin/plugin_mac.sh` points to the venv Python.
