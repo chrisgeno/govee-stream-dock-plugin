@@ -40,6 +40,7 @@ DIST_BUNDLE="${DIST_ROOT}/${PLUGIN_ID}"
 rm -rf "${DIST_BUNDLE}"
 mkdir -p "${DIST_ROOT}"
 cp -R "${PLUGIN_SRC}" "${DIST_BUNDLE}"
+rm -f "${DIST_BUNDLE}/DemoPlugin.exe"
 
 DIST_BUNDLE="${DIST_BUNDLE}" python3 - <<'PY'
 import json
