@@ -58,4 +58,9 @@ PY
 rm -f "${DIST_BUNDLE}/plugin_mac.sh"
 cp "${BIN_PATH}" "${DIST_BUNDLE}/GoveeLightControl"
 
+ZIP_PATH="${DIST_ROOT}/${PLUGIN_ID}.zip"
+rm -f "${ZIP_PATH}"
+(cd "${DIST_ROOT}" && /usr/bin/zip -r "${PLUGIN_ID}.zip" "${PLUGIN_ID}" >/dev/null)
+echo "Zip ready: ${ZIP_PATH}"
+
 echo "Bundle ready: ${DIST_BUNDLE}"
