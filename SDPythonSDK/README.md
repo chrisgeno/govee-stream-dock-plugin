@@ -30,6 +30,8 @@ This repo contains a Stream Dock plugin that controls Govee devices (On/Off + Br
 
 ## Development Environment Setup
 
+Run the following commands from the `SDPythonSDK` directory.
+
 1. Create virtual environment:
 ```bash
 python3 -m venv venv
@@ -54,7 +56,7 @@ pip install -r requirements.txt
 
 For local development, the plugin bundle is symlinked into the Stream Dock plugins folder. The bundle uses `plugin_mac.sh` to run `main.py` with the venv Python.
 
-1. Create a symlink (macOS):
+1. From the `SDPythonSDK` directory, create a symlink (macOS):
 ```bash
 ln -s "$(pwd)/com.mirabox.streamdock.goveelightcontrol.sdPlugin" \
       "$HOME/Library/Application Support/HotSpot/StreamDock/plugins/"
@@ -66,6 +68,8 @@ venv/bin/python
 ```
 
 3. Restart Stream Dock after changes.
+
+Logs are written to `logs/plugin.log`.
 
 ## Plugin Development Guide
 
@@ -99,7 +103,7 @@ Logger.error("Error occurred")
 
 ## Packaging and Distribution (macOS)
 
-1. Install packaging dependency:
+1. From the `SDPythonSDK` directory, install packaging dependency:
 ```bash
 pip install -r requirements-dev.txt
 ```

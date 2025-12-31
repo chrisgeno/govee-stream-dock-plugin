@@ -1,6 +1,6 @@
 # Govee Light Control for Stream Dock
 
-I built this because the existing generic Govee Control plugin on https://vsdinside.key123.vip/ did not work on a MAC and the only other repo had been deleted by its original creator. 
+I built this because the existing generic Govee Control plugin on https://vsdinside.key123.vip/ did not work on a MAC and the only other repo had been deleted by its original creator. I'm only supporting MAC for this plugin right now as that is all I use.
 
 I built this for my setup in as generic a way as possible, as bug reports come in from other configurations I'll do my best to get them fixed. 
 
@@ -13,7 +13,7 @@ Features:
 - Device picker in the property inspector
 
 Known Issues:
-- 
+- The Brightness Knob does not function properly with groups. It should work with individual devices.
 
 
 
@@ -33,7 +33,7 @@ SDPythonSDK/venv/bin/python -m pip install -r SDPythonSDK/requirements.txt
 
 2. Symlink the plugin bundle into Stream Dock:
 ```bash
-ln -s "/Users/christophergeno/GIT/StreamDock-Plugin-SDK/SDPythonSDK/com.mirabox.streamdock.goveelightcontrol.sdPlugin" \
+ln -s "~/GIT/StreamDock-Plugin-SDK/SDPythonSDK/com.mirabox.streamdock.goveelightcontrol.sdPlugin" \
       "/Users/christophergeno/Library/Application Support/HotSpot/StreamDock/plugins/"
 ```
 
@@ -65,6 +65,6 @@ SDPythonSDK/dist/com.mirabox.streamdock.goveelightcontrol.sdPlugin
 ```
 
 To install, copy that folder into:
-`/Users/christophergeno/Library/Application Support/HotSpot/StreamDock/plugins`
+`~/Library/Application Support/HotSpot/StreamDock/plugins`
 
 Restart Stream Dock after installing.
