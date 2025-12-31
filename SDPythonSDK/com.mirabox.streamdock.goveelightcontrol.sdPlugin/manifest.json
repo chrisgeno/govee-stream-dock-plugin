@@ -1,0 +1,81 @@
+{
+  "Actions": [
+    {
+      "UUID": "com.mirabox.streamdock.goveelightcontrol.govee",
+      "Icon": "static/img/App-logo.png",
+      "state": 0,
+      "States": [
+        {
+          "TitleAlignment": "center",
+          "FontSize": "11",
+          "Image": "static/img/App-logo.png"
+        },
+        {
+          "TitleAlignment": "center",
+          "FontSize": "11",
+          "Image": "static/img/icon.png"
+        }
+      ],
+      "Settings": {},
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": false,
+      "Controllers": [
+        "Keypad",
+        "Information",
+        "Knob"
+      ],
+      "Name": "Device On/Off",
+      "Tooltip": "Turn a Govee device on/off",
+      "PropertyInspectorPath": "./propertyInspector/govee/index.html"
+    },
+    {
+      "UUID": "com.mirabox.streamdock.goveelightcontrol.brightness",
+      "Icon": "static/img/App-logo.png",
+      "state": 0,
+      "States": [
+        {
+          "TitleAlignment": "center",
+          "FontSize": "11",
+          "Image": "static/img/App-logo.png"
+        },
+        {
+          "TitleAlignment": "center",
+          "FontSize": "11",
+          "Image": "static/img/icon.png"
+        }
+      ],
+      "Settings": {},
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": false,
+      "Controllers": [
+        "Knob",
+        "Information"
+      ],
+      "Name": "Brightness",
+      "Tooltip": "Adjust Govee brightness",
+      "PropertyInspectorPath": "./propertyInspector/govee/index.html"
+    }
+  ],
+  "Version": "0.0.1",
+  "Name": "Govee Light Control",
+  "Icon": "static/img/App-logo.png",
+  "CategoryIcon": "static/img/App-logo.png",
+  "Category": "Govee Light Control",
+  "Description": "Govee light control",
+  "CodePath": "DemoPlugin.exe",
+  "CodePathMac": "plugin_mac.sh",
+  "SDKVersion": 1,
+  "Author": "G3no",
+  "URL": "http://plugin.g3no.com",
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.11"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "7"
+    }
+  ],
+  "ApplicationsToMonitor": {}
+}

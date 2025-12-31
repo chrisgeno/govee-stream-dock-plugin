@@ -1,0 +1,14 @@
+{
+    "Name": "Govee Light Control",
+    "Category": "Govee Light Control",
+    "Description": "Govee light control",
+    "com.mirabox.streamdock.goveelightcontrol.govee": {
+        "Name": "Device On/Off",
+        "Tooltip": "Turn a Govee device on/off"
+    },
+    "com.mirabox.streamdock.goveelightcontrol.brightness": {
+        "Name": "Brightness",
+        "Tooltip": "Adjust Govee brightness"
+    },
+    "Localization": {}
+}

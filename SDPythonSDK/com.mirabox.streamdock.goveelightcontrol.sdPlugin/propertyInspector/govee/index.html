@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Govee Light Control - Settings</title>
+  <link rel="stylesheet" href="../../static/css/sdpi.css" />
+</head>
+
+<body>
+  <div class="sdpi-wrapper" style="display: none">
+    <div class="sdpi-item">
+      <div class="sdpi-item-label">API Key</div>
+      <input
+        class="sdpi-item-value"
+        id="apiKey"
+        type="password"
+        placeholder="Enter API key"
+        autocomplete="off"
+      />
+    </div>
+    <div class="sdpi-item">
+      <div class="sdpi-item-label">Device</div>
+      <select class="sdpi-item-value" id="deviceSelect">
+        <option value="">Load devices...</option>
+      </select>
+    </div>
+    <div class="sdpi-item">
+      <div class="sdpi-item-label">Device ID</div>
+      <input class="sdpi-item-value" id="deviceId" type="text" readonly />
+    </div>
+    <div class="sdpi-item">
+      <div class="sdpi-item-label">SKU</div>
+      <input class="sdpi-item-value" id="deviceSku" type="text" readonly />
+    </div>
+    <div class="sdpi-item" id="stepRow">
+      <div class="sdpi-item-label">Step Size</div>
+      <input
+        class="sdpi-item-value"
+        id="stepSize"
+        type="num"
+        placeholder="5"
+        value="5"
+      />
+    </div>
+    <div class="sdpi-item">
+      <div class="sdpi-item-label">Actions</div>
+      <button class="sdpi-item-value" id="loadDevices">Load Devices</button>
+    </div>
+  </div>
+  <script src="../../static/utils/common.js"></script>
+  <script src="../../static/action.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
